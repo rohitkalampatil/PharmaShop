@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="homePage.HomePageControl">
+    <top>
+        <VBox BorderPane.alignment="CENTER">
+            <children>
+                <MenuBar>
+                    <menus>
+                        <Menu mnemonicParsing="false" text="Inventory">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#addMedicine_Click" text="Add Medicine..." />
+                        <MenuItem mnemonicParsing="false" onAction="#searchMedicine_Click" text="Stock..." />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Sales">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="New Invoice..." />
+                        <MenuItem mnemonicParsing="false" text="Invoice History..." />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Suppliers">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="New Supplier..." />
+                        <MenuItem mnemonicParsing="false" text="Suppliers..." />
+                            </items>
+                        </Menu>
+                  <Menu mnemonicParsing="false" text="Customers">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="New Customer..." />
+                        <MenuItem mnemonicParsing="false" text="Costomers..." />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Exit" />
+                    </menus>
+                </MenuBar>
+            </children>
+        </VBox>
+    </top>
+    <bottom>
+        <HBox BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" text="Copyright 2023 : PharmaShop " textAlignment="CENTER" />
+            </children>
+            <padding>
+                <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+            </padding>
+         <BorderPane.margin>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </BorderPane.margin>
+        </HBox>
+    </bottom>
+</BorderPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="homePage.AddMedicine">
+   <children>
+      <Label layoutX="139.0" layoutY="14.0" prefHeight="46.0" prefWidth="251.0" text="Add New Medicine">
+         <font>
+            <Font name="Verdana Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="90.0" text="Medicinne Name :">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="132.0" text="Purchase Rate :">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="178.0" text="Saling Rate :">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="220.0" text="Quantity :">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="262.0" text="Supplier Name :">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="medicineName" layoutX="186.0" layoutY="87.0" prefHeight="25.0" prefWidth="302.0" />
+      <TextField fx:id="purchaseRate" layoutX="186.0" layoutY="129.0" prefHeight="25.0" prefWidth="302.0" />
+      <TextField fx:id="salingRate" layoutX="186.0" layoutY="171.0" prefHeight="25.0" prefWidth="302.0" />
+      <TextField fx:id="quantity" layoutX="186.0" layoutY="213.0" prefHeight="25.0" prefWidth="302.0" />
+      <Button fx:id="addButton" layoutX="419.0" layoutY="408.0" mnemonicParsing="false" onAction="#addButton_Click" prefHeight="25.0" prefWidth="69.0" text="Add" />
+      <Button fx:id="clearButton" layoutX="329.0" layoutY="408.0" mnemonicParsing="false" onAction="#clearButton_Click" prefHeight="25.0" prefWidth="69.0" text="Clear" />
+      <TextField fx:id="batchNo" layoutX="186.0" layoutY="301.0" prefHeight="25.0" prefWidth="302.0" />
+      <Label layoutX="42.0" layoutY="304.0" text="Batch NO :">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="expiryDate" layoutX="186.0" layoutY="343.0" prefHeight="25.0" prefWidth="302.0" />
+      <TextField fx:id="supplierName" layoutX="186.0" layoutY="259.0" prefHeight="25.0" prefWidth="302.0" />
+      <Label layoutX="42.0" layoutY="346.0" text="Expiry Date">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Label>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</AnchorPane>
