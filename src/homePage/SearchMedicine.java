@@ -50,9 +50,9 @@ public class SearchMedicine implements Initializable {
                                 resultSet.getString("name"),
                                 resultSet.getDouble("purchaserate"),
                                 resultSet.getDouble("salingrate"),
-                                resultSet.getDouble("purchaseRate"),
-                                resultSet.getString("batchno"),
+                                resultSet.getDouble("batchno"),
                                 resultSet.getString("expiry"),
+                                resultSet.getString("suppliername"),
                                 resultSet.getInt("quantity")
                         )
                 );
@@ -60,7 +60,7 @@ public class SearchMedicine implements Initializable {
 
             nameColumn.setCellValueFactory(new PropertyValueFactory<>("nameMedicine"));
             purchaseRate.setCellValueFactory(new PropertyValueFactory<>("purchaseRate"));
-            salingPrice.setCellValueFactory(new PropertyValueFactory<>("salingPrice"));
+            salingPrice.setCellValueFactory(new PropertyValueFactory<>("salingRate"));
             batchNo.setCellValueFactory(new PropertyValueFactory<>("batchNo"));
             expiryDate.setCellValueFactory(new PropertyValueFactory<>("expiryDate"));
             supplierName.setCellValueFactory(new PropertyValueFactory<>("supplierName"));
@@ -80,7 +80,6 @@ public class SearchMedicine implements Initializable {
     public void allMedicineStock_Display(){
 
         try {
-
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/pharmashop", "root", "root");
 
@@ -95,9 +94,9 @@ public class SearchMedicine implements Initializable {
                                 resultSet.getString("name"),
                                 resultSet.getDouble("purchaserate"),
                                 resultSet.getDouble("salingrate"),
-                                resultSet.getDouble("purchaseRate"),
-                                resultSet.getString("batchno"),
+                                resultSet.getDouble("batchno"),
                                 resultSet.getString("expiry"),
+                                resultSet.getString("suppliername"),
                                 resultSet.getInt("quantity")
                         )
                 );
@@ -105,7 +104,7 @@ public class SearchMedicine implements Initializable {
 
             nameColumn.setCellValueFactory(new PropertyValueFactory<>("nameMedicine"));
             purchaseRate.setCellValueFactory(new PropertyValueFactory<>("purchaseRate"));
-            salingPrice.setCellValueFactory(new PropertyValueFactory<>("salingPrice"));
+            salingPrice.setCellValueFactory(new PropertyValueFactory<>("salingRate"));
             batchNo.setCellValueFactory(new PropertyValueFactory<>("batchNo"));
             expiryDate.setCellValueFactory(new PropertyValueFactory<>("expiryDate"));
             supplierName.setCellValueFactory(new PropertyValueFactory<>("supplierName"));

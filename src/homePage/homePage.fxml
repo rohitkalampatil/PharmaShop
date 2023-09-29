@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
@@ -22,8 +17,8 @@
                         </Menu>
                         <Menu mnemonicParsing="false" text="Sales">
                             <items>
-                                <MenuItem mnemonicParsing="false" text="New Invoice..." />
-                        <MenuItem mnemonicParsing="false" text="Invoice History..." />
+                                <MenuItem mnemonicParsing="false" onAction="#newInvoice_Click" text="New Invoice..." />
+                        <MenuItem mnemonicParsing="false" onAction="#invoiceHistory_Click" text="Invoice History..." />
                             </items>
                         </Menu>
                         <Menu mnemonicParsing="false" text="Suppliers">
