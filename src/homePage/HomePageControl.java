@@ -1,10 +1,10 @@
 
 package homePage;
 
+import javafx.scene.Parent;
 import javafx.stage.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 
 import java.io.IOException;
@@ -55,6 +55,10 @@ public class HomePageControl {
         window.setScene(scene);
         window.show();
     }
-
+    public void exitItem_Click(ActionEvent actionEvent) throws IOException{
+        window.getScene().getWindow();
+        window.close();
+        System.out.println("gjgf");
+    }
 
 }

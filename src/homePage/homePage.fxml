@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
@@ -21,19 +23,6 @@
                         <MenuItem mnemonicParsing="false" onAction="#invoiceHistory_Click" text="Invoice History..." />
                             </items>
                         </Menu>
-                        <Menu mnemonicParsing="false" text="Suppliers">
-                            <items>
-                                <MenuItem mnemonicParsing="false" text="New Supplier..." />
-                        <MenuItem mnemonicParsing="false" text="Suppliers..." />
-                            </items>
-                        </Menu>
-                  <Menu mnemonicParsing="false" text="Customers">
-                     <items>
-                        <MenuItem mnemonicParsing="false" text="New Customer..." />
-                        <MenuItem mnemonicParsing="false" text="Costomers..." />
-                     </items>
-                  </Menu>
-                  <Menu mnemonicParsing="false" text="Exit" />
                     </menus>
                 </MenuBar>
             </children>
