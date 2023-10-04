@@ -1,0 +1,59 @@
+
+/* use following commands to setup database */
+
+
+mysql> create database pharmashop;
+Query OK, 1 row affected (0.00 sec)
+
+
+mysql> use pharmashop
+Database changed
+mysql> show tables;
++----------------------+
+| Tables_in_pharmashop |
++----------------------+
+| invoice              |
+| invoice_customer     |
+| medicine             |
++----------------------+
+3 rows in set (0.04 sec)
+
+mysql> desc invoice;
++-----------------+-------------+------+-----+---------+-------+
+| Field           | Type        | Null | Key | Default | Extra |
++-----------------+-------------+------+-----+---------+-------+
+| productName     | varchar(30) | YES  |     | NULL    |       |
+| productPrice    | double      | YES  |     | NULL    |       |
+| productQuantity | int(11)     | YES  |     | NULL    |       |
+| totalAmount     | double      | YES  |     | NULL    |       |
+| invoiceDate     | varchar(30) | YES  |     | NULL    |       |
+| invoiceNo       | int(11)     | YES  |     | NULL    |       |
++-----------------+-------------+------+-----+---------+-------+
+6 rows in set (0.01 sec)
+
+mysql> desc invoice_customer;
++--------------+-------------+------+-----+---------+-------+
+| Field        | Type        | Null | Key | Default | Extra |
++--------------+-------------+------+-----+---------+-------+
+| invoiceNo    | int(11)     | YES  |     | NULL    |       |
+| customerName | varchar(40) | YES  |     | NULL    |       |
+| invoiceDate  | varchar(30) | YES  |     | NULL    |       |
+| amount       | double      | YES  |     | NULL    |       |
++--------------+-------------+------+-----+---------+-------+
+4 rows in set (0.01 sec)
+
+mysql> desc medicine;
++--------------+-------------+------+-----+---------+-------+
+| Field        | Type        | Null | Key | Default | Extra |
++--------------+-------------+------+-----+---------+-------+
+| name         | varchar(40) | YES  |     | NULL    |       |
+| purchaserate | double      | YES  |     | NULL    |       |
+| salingrate   | double      | YES  |     | NULL    |       |
+| quantity     | int(11)     | YES  |     | NULL    |       |
+| batchno      | double      | NO   | PRI | NULL    |       |
+| suppliername | varchar(40) | YES  |     | NULL    |       |
+| expiry       | varchar(30) | YES  |     | NULL    |       |
++--------------+-------------+------+-----+---------+-------+
+7 rows in set (0.01 sec)
+
+mysql>
